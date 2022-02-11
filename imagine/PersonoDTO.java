@@ -1,6 +1,6 @@
 package book.model.dto;
 
-public class PersonoDTO {
+public class PersonDTO {
 	private String pname;
 	private String pid;
 	private String password;
@@ -15,7 +15,7 @@ public class PersonoDTO {
 		builder.append(password);
 		return builder.toString();
 	}
-	public PersonoDTO(String pname, String pid, String password) {
+	public PersonDTO(String pname, String pid, String password) {
 		super();
 		this.pname = pname;
 		this.pid = pid;
