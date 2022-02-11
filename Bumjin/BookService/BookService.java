@@ -127,7 +127,7 @@ public class BookService {
 	}
 	
 	//Category id로 검색
-	public static CategoryDTO getProbono(String CName) throws SQLException, NotExistException{
+	public static CategoryDTO getCategory(String CName) throws SQLException, NotExistException{
 		CategoryDTO probono = CategoryDAO.getCategory(CName);
 		if(probono == null){
 			throw new NotExistException("검색하신 카테고리 정보가 없습니다.");
@@ -135,7 +135,7 @@ public class BookService {
 		return probono;
 	}
 	//새로운 Category 저장
-	public static boolean addProbono(CategoryDTO category) throws SQLException, MessageException{
+	public static boolean addCategory(CategoryDTO category) throws SQLException, MessageException{
 		boolean result = false;
 		try{
 			result = CategoryDAO.addCategory(category);
