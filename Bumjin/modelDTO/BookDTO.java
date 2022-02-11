@@ -3,14 +3,14 @@ package book.model.dto;
 public class BookDTO {
 	private String bname;
 	private String Bnumber;
-	private String barely;
+	private String publisher;
 	
 	public BookDTO() {}	
 	
 	public BookDTO(String bname, String bnumber, String barely) {
 		this.bname = bname;
 		this.Bnumber = bnumber;
-		this.barely = barely;
+		this.publisher = publisher;
 	}
 
 	public String getbname() {
@@ -25,11 +25,11 @@ public class BookDTO {
 	public void setBnumber(String bnumber) {
 		Bnumber = bnumber;
 	}
-	public String getBarely() {
-		return barely;
+	public String getPublisher() {
+		return publisher;
 	}
-	public void setBarely(String barely) {
-		this.barely = barely;
+	public void setPublisher(String barely) {
+		this.publisher = barely;
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class BookDTO {
 		builder.append("2. 책 고유번호");
 		builder.append(Bnumber);
 		builder.append("3. 출판사");
-		builder.append(barely);
+		builder.append(publisher);
 		return builder.toString();
 	}
 	
